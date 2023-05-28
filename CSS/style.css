@@ -1,91 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
-/*body{
-    padding: 0 50px;
-}*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/*Header Section*/
+
 header{
     background-color: #1f2937;
-    padding: 0 100px 30px 100px;
+    padding: 0 100px 50px 100px;
+    
 }
 .nav-links{
-    /*border: 2px solid black;*/
+    
     display: flex;
     list-style: none;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+.link{
+    color: #e5e7eb;
+    text-decoration: none;
 }
 li{
-    padding: 5px 20px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+li:hover{
+    transform: scale(1.2);
 }
 .logo{
     margin-right: auto;
+    font-size: 48px;
+    color: #f9faf8;
+    font-family: 'Dancing Script', cursive;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
 }
 .intro{
     display: flex;
     margin-top: 30px;
-    /*border: 2px solid black;*/
+    margin-bottom: 30px;
+    
     gap: 100px;
 }
 .intro-text{
     margin: 10px 0;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 .header-img{
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 250px;
 }
 .header-button{
-    padding: 5px 10px;
+    border: none;
+}
+button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 5px 25px;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: #1f73fc;
 }
 
+/*Info Section*/
 
 
 .random-info{
-    padding: 30px 100px;
+    padding: 60px 100px;
     text-align: center;
 }
 .info-cards{
     display: flex;
-    /*border: 2px solid black;*/
     padding: 30px 0;
+    gap: 20px;
+}
+
+.info-cards > div > p{
+    margin-top: 10px;
+    font-size: 18px;
 }
 img{
     width: 200px;
     height: 180px;
 }
+h2{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+.random-info-img{
+    border-radius: 8px;
+    border: 5px solid #3882f6;
+}
 
+/*Quote Section*/
 
 .quote{
-    padding: 30px 150px;
+    padding: 80px 150px;
     background: #e5e7eb;
 }
 .quote-info, .quote-author{
     padding: 0 50px;
+    
 }
+.quote-info{
+    font-size: 36px;
+    color: #1f2937;
+    text-align: justify;
+}
+
 .quote-author{
     text-align: right;
+    margin-top: 20px;
 }
 
-
-
+/*Contact Section*/
 
 .contact-container{
-    padding: 30px 150px;
+    padding: 80px 150px;
 }
 .contact{
     background: #3882f6;
     display: flex;
     padding: 20px 30px;
+    align-items: center;
 }
 .contact-msg{
     flex: 3 0 auto;
 }
 .contact-btn{
-    flex: 1;
+    border: 2px solid #f9faf8;
+}
+h3{
+    font-size: 24px;
+    color: #f9faf8;
+}
+.contact-text{
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
+/*Footer Section*/
 
 footer{
-    padding: 30px 150px;
+    padding: 40px 150px;
     text-align: center;
     background-color: #1f2937;
+    color: #e5e7eb;
 }
